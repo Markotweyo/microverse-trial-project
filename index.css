@@ -1,0 +1,11 @@
+div.main-body {
+    display: grid;
+    grid-template-columns: minmax(300px, auto) 1fr;
+    grid-template-areas: "navbar mainContent"
+}
+
+nav#navbar {
+    grid-area: navbar;
+    position: fixed;
+}   
+
