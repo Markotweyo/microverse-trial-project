@@ -1,0 +1,12 @@
+#main-doc {
+  margin-left: 310px;
+  position: absolute;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+header {
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+}
