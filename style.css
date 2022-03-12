@@ -1,3 +1,15 @@
+div.main-body {
+    display: grid;
+    grid-template-columns: minmax(300px, auto) 1fr;
+    grid-template-areas: "navbar mainContent"
+}
+
+nav#navbar {
+    grid-area: navbar;
+    position: fixed;
+}   
+
+
 #main-doc {
   margin-left: 310px;
   position: absolute;
@@ -9,4 +21,42 @@ header {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
+}
+
+nav#navbar {
+    grid-area: navbar;
+    position: fixed;
+}
+
+nav#navbar a {
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: black;
+}
+
+
+main#main-doc {
+    grid-area: mainContent;
+}
+
+code {
+    background-color: grey;
+    display: block;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 750px) {
+    div.main-body {
+        grid-template-columns: 1fr;
+        grid-template-areas: "navbar" "mainContent";
+
+    }
+
+    nav#navbar {
+        position: inherit;
+    }
 }
